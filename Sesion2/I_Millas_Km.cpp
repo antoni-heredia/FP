@@ -4,14 +4,14 @@
 // CURSO 2016-2017
 // (C) Antonio Jesus Heredia Castillo
 //
-// 
-/* Programa para calcular el area y la circunferencia
+//
+/* Programa para pasar de millas a kilometros
    Implementa la siguiente formula
 
-   Entradas: radio(cm)
-   Salidas:  
-             longitud circunferencia = 2 x pi x radio
-			 área circulo = pi x radio^2
+   Entradas: millas
+   Salidas:  kilometros
+             kilometros = millas * 1,609
+
 */
 /***************************************************************************/
 
@@ -19,29 +19,27 @@
 #include <iostream>   // Inclusión de los recursos de E/S
 #include <cmath>      // Inclusión de los recursos matemáticos
 
-using namespace std; 
+using namespace std;
 
 
 int main() // Programa Principal
-{                       
-	double radio;               // Declara variables para guardar
-	double circunferencia;               // los el radio, la longitud de la circunferencia y el area
-	double area;
-	const double pi = 3.1415927;
+{
+    double millas;               // cantidad de millas introducidas por el usuario
+    double kilometros;           // kilometros una vez convertidas la smillas
+    const double conversion = 1.609;
+    // Entrada de datos
+    cout << "Introduzca las millas: " ;
+    cin >> millas;
 
-   // Entrada de datos
-   cout << "Introduzca el radio: " ;
-   cin >> radio;
-   
-	// Implementacion de la formula
-   	circunferencia = radio * pi * 2;
-	area = radio * radio * pi;
-	/*
-		Usando constantes, te ahorras cambiar el valor de pi en todos los lados que la uses,
-		solo tendrias que cambiarlo donde declares la constante
-	*/
-	cout << "\nLa longitud de la circunferencia vale: " << circunferencia << " cm\n\n" ;
-   	cout << "\n El area vale: " << area << " cm^2\n\n" ;
+    // Implementacion de la formula
+    kilometros = millas * conversion;
+    cout << "\n "<< millas << " millas son : " << kilometros << " kilometros\n\n" ;
 
-	return (0);
+    cout << "Introduzca los kilometros: " ;
+    cin >> kilometros;
+
+    // Implementacion de la formula
+    millas = kilometros / conversion;
+    cout << "\n "<< kilometros << " kilometros son : " << millas << " millas\n\n" ;
+    return (0);
 }
