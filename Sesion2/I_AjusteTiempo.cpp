@@ -43,7 +43,7 @@ int main() // Programa Principal
     segundos = segundos%60;
     minutos = minutos%60;
     horas = horas%24;
-    cout << "Son " << dias << " dias, " << horas " horas," << minutos << " minutos, " << segundos << " segundos /n";
+    cout << "Son " << dias << " dias, " << horas << " horas," << minutos << " minutos, " << segundos << " segundos /n";
 
     return (0);
 }
