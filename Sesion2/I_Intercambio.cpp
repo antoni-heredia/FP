@@ -10,6 +10,7 @@
 
    Entradas: caja_dcha, caja_izda;
    Salidas: caja_dcha, caja_izda;
+   Usamos una variable intermedia para poder introducir temporalmente el valor de la cajaDerecha antes de cambiarlo
 
 */
 /***************************************************************************/
