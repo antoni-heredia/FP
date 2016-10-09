@@ -42,5 +42,6 @@ int main() // Programa Principal
     cin >> anio;
     tercera_expresion = ( (anio % 4 == 0 && anio % 100 != 0) || anio % 400 == 0);
     cout << endl << "El resultado es: " << tercera_expresion;
-
+    
+    return(0);
 }

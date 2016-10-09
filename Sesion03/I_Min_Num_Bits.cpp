@@ -35,4 +35,6 @@ int main() // Programa Principal
     cantidad_de_bits = (log10(numero)/log10(2))+1;
     // Mostramos el resultado
     cout << endl << "El numero de bits necesarios son: " << cantidad_de_bits;
+
+    return(0);
 }

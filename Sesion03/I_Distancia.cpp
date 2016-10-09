@@ -44,4 +44,6 @@ int main() // Programa Principal
 
     distancia=sqrt(pow(x1-x2,2)+pow(y1-y2,2));
     cout << endl << "La distancia entre los puntos es: " << distancia;
+    
+    return(0);
 }

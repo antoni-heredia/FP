@@ -24,7 +24,7 @@ using namespace std;
 
 int main() // Programa Principal
 {
-    //DEclaracion de variables
+    //Declaracion de variables
     char caracter, caracter_minuscula;
     //Peticion de introduccion de datos
     cout << "Introduzca un caracter en mayuscula por favor: ";
@@ -33,4 +33,6 @@ int main() // Programa Principal
     caracter_minuscula = caracter + 32;
     //Mostrar el resultado
     cout << endl << "El caracter " << caracter<< " en minuscula es: " << caracter_minuscula;
+
+    return(0);
 }
