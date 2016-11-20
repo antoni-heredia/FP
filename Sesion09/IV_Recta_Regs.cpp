@@ -42,7 +42,7 @@
 /***************************************************************************/
 
 
-#include <iostream>   // Inclusión de los recursos de E/S
+#include <iostream>   // Inclusion de los recursos de E/S
 #include <cmath>
 #include <string>
 using namespace std;

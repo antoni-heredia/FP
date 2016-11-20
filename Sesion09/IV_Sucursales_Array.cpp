@@ -93,4 +93,6 @@ int main() // Programa Principal
 	     << sucursales_con_ventas << endl;
 	cout << "La cantidad total de productos vendidos es " << total_productos
 		 << endl; 
+	
+	return(0);
 }
