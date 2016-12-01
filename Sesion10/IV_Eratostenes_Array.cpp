@@ -7,18 +7,11 @@
 //
 //
 /*
-	El programa realiza la criba de Eratostenes.
-	* 
-	* Para ello por defecto decimos que todos los numeros son primos.
-	* Luego con un ciclo for comprobaremos todos los numeros y si esta marcado
-	* como primo comprobamos si lo es de verdad, y entonces marcamos como 
-	* no primos todos sus multiplos, ademas si el numero es primo lo guardamos
-	* en un vector de primos y pasamos al siguiente numero.
+	
     
-    Entradas: numero hasta donde queremos ver los primos
-    Salidas:  Todos los primos hastta el numero introducido
 */
 /***************************************************************************/
+
 
 
 #include <iostream>   // Inclusión de los recursos de E/S

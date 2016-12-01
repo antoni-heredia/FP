@@ -7,11 +7,16 @@
 //
 //
 /*
-
+	Para este programa usare basicamente la distancia entre puntos y con ello
+	saber si un punto esta en una circunferencia.
 	
-	Entrada:  centro y radio de la circunferencia, diferentes puntos
+	Pediremos los puntos del centro y el radio.
+	Cada elemento de la matriz actuara como si fuera un punto, y comprobaremos
+	si dicho punto esta dentro del circulo, si esta dentro del circulo se
+	pinta, si no no se pinta
+	Entrada:  centro y radio de la circunferencia
 	
-	Salida: area, longitud y si las cordenadas estan dentro de la circunferencia
+	Salida: dibujo de un circulo con centro y radio el introducido
 	
 */
 /***************************************************************************/
@@ -35,6 +40,7 @@ bool PuntoEnCircunferencia(int x_centro, int y_centro,int radio, int x_punto, in
 	return !(distancia > radio);
 }
 
+//Lee solamente enteros positivos
 int LeerEnteroPositivo(string mensaje0){
 	int numero;
 	do {
@@ -45,14 +51,16 @@ int LeerEnteroPositivo(string mensaje0){
 }
 int main() // Programa Principal
 {
-	
+	//Varialbes de entrada
 	int x_centro, y_centro,  radio;
 	string mensaje;
 	
-	const int FILAS = 51;
-	const int COLUMNAS = 51;
+	//Tamaño de la matriz
+	const int NUM_FILAS = 51;
+	const int NUM_COLUMNAS = 51;
 	
-	char lienzo[FILAS][COLUMNAS];
+	//Donde se pinta el circulo
+	char lienzo[NUM_FILAS][NUM_COLUMNAS];
 	
 	//Pedimos al usuario que introduzca los datos del circulo
 	cout << "Centro de la circunferencia: " << endl;
@@ -65,18 +73,27 @@ int main() // Programa Principal
 	mensaje = "Introduzca el radio: ";
 	radio = LeerEnteroPositivo(mensaje);;
     
-	for(int y = 0; y<FILAS; y++){
-		for(int x = 0; x<COLUMNAS; x++){
-			if(PuntoEnCircunferencia(x_centro,y_centro,radio,x,50-y))
+    
+    //Recorremos todos los puntos de la matriz mirando si estan dentro del 
+	//circulo
+	for(int y = 0; y<NUM_FILAS; y++){
+		for(int x = 0; x<NUM_COLUMNAS; x++){
+			/*
+				Como el [0,0] en realidad es el [50][0], a la hora de ver si 
+				el punto esta en la circunferencia tenemos qe poner el numero 
+				de filas totales, menos la que estamos comprobando ahora mismo
+			*/
+			if(PuntoEnCircunferencia(x_centro,y_centro,radio,x,NUM_FILAS-y))
 				lienzo[y][x] = '*';
 			else
 				lienzo[y][x] = ' ';
 		}	
 	}
 	
-	for(int y = 0; y<FILAS; y++){
-		for(int x = 0; x<COLUMNAS; x++){
-			cout <<	lienzo[y][x];		
+	//Recorremos todos los elementos de la matriz imprimiendo su contenido
+	for(int y = 0; y<NUM_FILAS; y++){
+		for(int x = 0; x<NUM_COLUMNAS; x++){
+			cout <<	lienzo[y][x] << " ";		
 		}
 		cout << endl;	
 	}
