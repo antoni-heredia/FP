@@ -15,51 +15,92 @@
 
 #include <iostream>
 using namespace std;
-class Fibbonnaci
+class Fibonacci
 {
 	private:
 	
+		//Declaramos el array de elementos de la serie de fibonacci
 		static const int TAMANIO = 500; 
-		int elementos[TAMANIO];
+		long long elementos[TAMANIO];
 		
-		int n,k,tope;
+		//Declaramaos el tope y el orden que tiene la sucesion
+		int n,tope;
 	public:
-		Fibbonnaci(int n_intr){
+		//Declaramos el constructor de la clase al cual se le pasa el orden
+		Fibonacci(int n_intr){
 			n = n_intr;
+			//El primer y el segundo elemento ya damos por hecho que son 1
 			elementos[0] = 1;
 			elementos[1] = 1;
+			//Y por tanto el tope por lo mino es dos
 			tope = 2;
 		}
 		
+		//Metodo que devuelve el orden d
 		int GetOrden(){
 			return n;
 		}
 		
+		//Metodo que nos calcula hasta un k pasado por el usuario
 		void CalculaPrimeros(int k_intr){
 			tope = k_intr;
+			//empezamos el bucle en la posicion 2 del vector (la 3º)
 			for(int x = 2; x < tope; x++){
-				int numero_x = 0;
+				long long numero_x = 0;
 				int y_introducir;
-				
+				/*
+					Si el x que estamos procesando es menor que el orden
+					El numero que calculamos empezara  a crearse sumando desde 
+					la posicion 0, si empezara en la posicion x-n, ya que 
+					tendra que empezar a sumar desde esa posicion hasta la x
+					para contruir el numero 
+				*/
 				if(x<n)
 					y_introducir = 0;
 				else
 					y_introducir = x-n;
 				
+				//Recorremos desde el y que hemos calculado anteriormente hasta
+				//la posicion que nos toca ahora
 				for(int y = y_introducir; y < x; y++){
 					numero_x += elementos[y];
 				}
+				//añadimos el numero al array de elementos
 				elementos[x] = numero_x;
 			}
 		}
 		
+		//Devolvemos la cantidad de elementos que hemos calculado
 		int TotalCalculados(){
 			return tope;
+		}
+		//Devolvemos elemento que esta en la posicion pasada
+		long long Elemento(int indice){
+			return elementos[indice];
 		}
 };
 /***************************************************************************/
 
 int main (void)
 {
+	//Declaramos los valores del numero de elementos a calcular y el orden
+	int k = 50; 
+	int n = 4;
+	
+	//Donde guardamos el numero elementos que ha calculado
+	int tope;
+	
+	//Creamos el objeto fibonacci de orden n
+	Fibonacci fibonacci(n);
+	
+	//Calculamos los k primeros numeros
+	fibonacci.CalculaPrimeros(k);
+	
+	//Guardamos el numero de elementos calculados
+	tope = fibonacci.TotalCalculados(); // tope = k
+	
+	//Mostramos todos los elementos calculados
+	for (int i=0; i<tope; i++)
+		cout << fibonacci.Elemento(i) << endl;
 	return(0);
 }
