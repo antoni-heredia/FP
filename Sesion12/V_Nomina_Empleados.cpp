@@ -40,17 +40,17 @@ class Nomina_Empleado
 private:
 	//Declaramos las constantes de los salarios de cada uno
 	//Son doubles ya que puede tener decimales aunque en este caso no
-	const double base_operario = 900.0;
-	const double base_base = 1100.0;
-	const double base_administrativo = 1200.0;
-	const double base_ejecutivo = 2000.0;
+	const double BASE_OPERARIO = 900.0;
+	const double BASE_BASE = 1100.0;
+	const double BASE_ADMINISTRATIVO = 1200.0;
+	const double BASE_EJECUTIVO = 2000.0;
 	
 	//Declaramos las constantes de los precios de las horas extras
 	//Son doubles ya que puede tener decimales aunque en este caso no
-	const double hora_operario = 16;
-	const double hora_base = 23;
-	const double hora_administrativo = 25;
-	const double hora_ejecutivo = 30;
+	const double HORA_OPERARIO = 16;
+	const double HORA_BASE = 23;
+	const double HORA_ADMINISTRATIVO = 25;
+	const double HORA_EJECUTIVO = 30;
 	
 	//Declaramos las variables donde guardaremos los datos una vez nos pase
 	//los datos el contructor
@@ -66,20 +66,20 @@ public:
 		categoria = categoria_intr;
 		switch (categoria){  
 			case 'O':  
-				salario_base = base_operario;
-				precio_hora = hora_operario;
+				salario_base = BASE_OPERARIO;
+				precio_hora = HORA_OPERARIO;
 				break;  
 			case 'B':  
-				salario_base = base_base;
-				precio_hora = hora_base;
+				salario_base = BASE_BASE;
+				precio_hora = HORA_BASE;
 				break;
 			case 'A':  
-				salario_base = base_administrativo;
-				precio_hora = hora_administrativo;
+				salario_base = BASE_ADMINISTRATIVO;
+				precio_hora = HORA_ADMINISTRATIVO;
 				break;
 			case 'E':  
-				salario_base = base_ejecutivo;
-				precio_hora = hora_ejecutivo; 
+				salario_base = BASE_EJECUTIVO;
+				precio_hora = HORA_EJECUTIVO; 
 				break;
 		}
 		horas_extras = horas;

@@ -7,9 +7,24 @@
 //
 //
 /*
+	Tenemos la clase Fibonacci que tiene como datos privados un array
+	donde guardamos los elementos de la sucesion de fibonnaci de orden n.
+	Tambien guardamos el orden y el numero de elementos calculados
 	
-    Entradas: millas iniciales, aumento y disminucion
-    Salidas:  millas y kilometros
+	Como metodos publicos tenemos el constructor de la clase el cual inicializa
+	las primeras posiciones del vector y ademas pone el numero de elementos 
+	calculados a dos. Tambien tenemos uno que nos devuelve el orden que tiene, 
+	el total de calculados y ademas elemento de una posicion dada.
+	
+	El metodo publico principal es el que nos calcula los k numeros de la 
+	succesion. El metodo esta explicado mas exhaustivamente en el codigo.
+	
+	La funcion main tiene un funcionamiento muy basico, en el que solo se calcula
+	los k numeros en el orden n, que estan como variable. Y luego mostramos
+	cada uno de los elementos con un for.
+	
+    Entradas: ninguna
+    Salidas:  k elementos de la serie de fibonnaci
 */
 /***************************************************************************/
 
