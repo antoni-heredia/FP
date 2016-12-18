@@ -7,9 +7,14 @@
 //
 //
 /*
-
-    Entradas: secuencia de enteror
-    Salidas: secuencia codificada y decodificada
+	El programa recogera dos conjuntos y hara una union y una interssecion
+	entre ellos.
+	
+	Para ello contamos con la clase ConjuntoOrdenado, la cual tiene metodos
+	para añadir, ver cuantos elementos tiene, hacer la union y la interseccion
+	con otro conjunto ordenado y que nos devuelva un elemnto
+    Entradas: elementos de dos conjuntos
+    Salidas: union e interseccion de  dos conjuntos
 */
 /***************************************************************************/
 
@@ -17,13 +22,25 @@
 
 using namespace std;
 /***************************************************************************/
+//Clase donde vamos guardando almacenando un vector de forma ordenada
 class ConjuntoOrdenado
 {
 	private:
+		//Datos y metodo privado
 		static const int TAMANIO = 500;
 		int vector_privado[TAMANIO];
 		int cant = 0;
-	public:
+		
+		
+		//Metodo que añade sin ordenadar usado solo dentro de la clase
+		void AniadirElementoSinOrdenacion(int elemento){
+			if(!Existe(elemento)){
+				vector_privado[cant] = elemento;
+				cant++;
+			}
+		}
+		
+		//Metodo que nos ordena el vector
 		void OrdenarVector(void){
 			bool cambio = true;
 			int intercambia;
@@ -39,6 +56,9 @@ class ConjuntoOrdenado
 			}
 		}
 		
+	public:
+		
+		//Mtodo que nos dice si un elemento existe
 		bool Existe(int elemento){
 			bool existe = false;
 			for(int i = 0; i < cant && !existe; i++){
@@ -48,40 +68,48 @@ class ConjuntoOrdenado
 			return existe;
 		}
 		
-		void AniadirElementoSinOrdenacion(int elemento){
-			if(!Existe(elemento)){
-				vector_privado[cant] = elemento;
-				cant++;
-			}
-		}
-
+		
+		//Metodo que añade un elemento sin ordenarlo y luego lo ordena
 		void AniadirElemento(int elemento){
 			AniadirElementoSinOrdenacion(elemento);
 			OrdenarVector();
 		}
+		
+		//Nos devuelve un elemento dado una posicion
 		int Elemento(int posicion){
 			return vector_privado[posicion];
 		}
 		
+		//Devuelve la cantidad de elementos
 		int Cantidad(void){
 			return cant;
 		}
 		
+		//Metodo que devuelve la union entre dos conjuntos
 		ConjuntoOrdenado Union(ConjuntoOrdenado conjunto){
+			//Creamos el conjunto que devolvemos el cual va a ser de primeras
+			//uno de los dos conjuntos y los siguientes los iremos añadiendo
 			ConjuntoOrdenado conjunto_union = conjunto;
+			//Recorremos todos los elemenos del este conjunto y los añadimos
 			for(int i = 0; i < Cantidad();i++){
 				conjunto_union.AniadirElementoSinOrdenacion(Elemento(i));
 			}
+			//Lo ordenamos y ya lo devolvemos
 			conjunto_union.OrdenarVector();
 			return conjunto_union;
 		}
 		
+		//Metodo que devuelve la interseccion entre dos conjuntos
 		ConjuntoOrdenado Interseccion(ConjuntoOrdenado conjunto){
+			//Conjunto donde guardamos los elementos
 			ConjuntoOrdenado conjunto_interseccion;
 			for(int i = 0; i < conjunto.Cantidad();i++){
+				//Lo guardamos si y solamente si el elemnto existe en este objeto
 				if(Existe(conjunto.Elemento(i)))
-					conjunto_interseccion.AniadirElementoSinOrdenacion(Elemento(i));
+					conjunto_interseccion.AniadirElementoSinOrdenacion(conjunto.Elemento(i));
 			}
+			
+			//Lo ordenamos y lo devolemos
 			conjunto_interseccion.OrdenarVector();
 			return conjunto_interseccion;
 		}
@@ -90,6 +118,7 @@ class ConjuntoOrdenado
 };
 int main(void)
 {
+	
 	ConjuntoOrdenado conjunto_a, conjunto_b, conjunto_union, conjunto_interse;
 	//Leemos los enteros y los introducimos en el objeto
 	cout << "Enteros del conjunto A:" << endl;
@@ -98,27 +127,31 @@ int main(void)
 	do{
 		cout << "Introduzca un entero: ";
 		cin >> entero;
-		conjunto_a.AniadirElemento(entero);
+		if(entero != -1)
+			conjunto_a.AniadirElemento(entero);
 	}while(entero!= -1);
 	
 	cout << "Enteros del conjunto B:" << endl;
 	do{
 		cout << "Introduzca un entero: ";
 		cin >> entero;
-		conjunto_b.AniadirElemento(entero);
+		if(entero != -1)
+			conjunto_b.AniadirElemento(entero);
 	}while(entero!= -1);
 	
+	//Creamos los conjuntos de union e interseccion
 	conjunto_union = conjunto_a.Union(conjunto_b);
 	conjunto_interse = conjunto_a.Interseccion(conjunto_b);
 	
+	//Mostramos ambos conjuntos
 	cout << endl << "La union es: ";
 	for(int i = 0; i<conjunto_union.Cantidad(); i++){
-		cout << conjunto_union.Elemento(i) << "-";
+		cout << conjunto_union.Elemento(i) << " ";
 	}
 	
 	cout << endl << "La interseccion es: ";
 	for(int i = 0; i<conjunto_interse.Cantidad(); i++){
-		cout << conjunto_interse.Elemento(i) << "-";
+		cout << conjunto_interse.Elemento(i) << " ";
 	}
 	//Salimos de la funcion principal
 	return(0);
