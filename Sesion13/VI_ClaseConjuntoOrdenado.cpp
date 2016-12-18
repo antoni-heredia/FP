@@ -118,7 +118,7 @@ class ConjuntoOrdenado
 };
 int main(void)
 {
-	
+	//Conjuntos que vamos a usar durante la ejecucion
 	ConjuntoOrdenado conjunto_a, conjunto_b, conjunto_union, conjunto_interse;
 	//Leemos los enteros y los introducimos en el objeto
 	cout << "Enteros del conjunto A:" << endl;
