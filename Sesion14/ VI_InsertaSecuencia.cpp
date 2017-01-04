@@ -1,5 +1,5 @@
 /***************************************************************************/
-// FUNDAMENTOS DE PROGRAMACIÓN
+// FUNDAMENTOS DE PROGRAMACIÃ“N
 //
 // CURSO 2016-2017
 // (C) Antonio Jesus Heredia Castillo
@@ -24,12 +24,12 @@ class SecuenciaCaracteres {
 
 private:
 
-    static const int TAMANIO = 50; // Núm.casillas disponibles
+    static const int TAMANIO = 50; // NÃºm.casillas disponibles
     char vector_privado[TAMANIO];
 
     // PRE: 0<=total_utilizados<=TAMANIO
 
-    int total_utilizados; // Núm.casillas ocupadas
+    int total_utilizados; // NÃºm.casillas ocupadas
 
 public:
 
@@ -40,7 +40,7 @@ public:
     {}
 
     /***********************************************************************/
-    // Devuelve el número de casillas ocupadas
+    // Devuelve el nÃºmero de casillas ocupadas
 
     int TotalUtilizados (void)
     {
@@ -48,7 +48,7 @@ public:
     }
 
     /***********************************************************************/
-    // Devuelve el número de casillas disponibles
+    // Devuelve el nÃºmero de casillas disponibles
 
     int Capacidad (void)
     {
@@ -56,9 +56,9 @@ public:
     }
 
     /***********************************************************************/
-    // Añade un elemento ("nuevo") al vector.
+    // AÃ±ade un elemento ("nuevo") al vector.
     // PRE: total_utilizados < TAMANIO
-    // 		La adición se realiza si hay alguna casilla disponible.
+    // 		La adiciÃ³n se realiza si hay alguna casilla disponible.
     // 		El nuevo elemento se coloca al final del vector.
     // 		Si no hay espacio, no se hace nada.
 
@@ -80,15 +80,15 @@ public:
     }
 
     /***********************************************************************/
-    // Eliminar el carácter de la posición dada por "indice".
-    // Realiza un borrado físico (desplazamiento y sustitución).
+    // Eliminar el carÃ¡cter de la posiciÃ³n dada por "indice".
+    // Realiza un borrado fÃ­sico (desplazamiento y sustituciÃ³n).
     // PRE: 0 <= indice < total_utilizados
 
     void Elimina (int indice)
     {
         if ((indice >= 0) && (indice < total_utilizados)) {
 
-            int tope = total_utilizados-1; // posic. del último
+            int tope = total_utilizados-1; // posic. del Ãºltimo
 
             for (int i = indice ; i < tope ; i++)
                 vector_privado[i] = vector_privado[i+1];
@@ -99,8 +99,8 @@ public:
 
 
     /***********************************************************************/
-	// Inserta el carácter "valor_nuevo" en la posición "pos_insercion".
-    // Realiza un desplazamiento de todos los valores desde la posición 
+	// Inserta el carÃ¡cter "valor_nuevo" en la posiciÃ³n "pos_insercion".
+    // Realiza un desplazamiento de todos los valores desde la posiciÃ³n 
 	// "pos_insercion".
     // PRE: 0 <= pos_insercion <= total_utilizados
     // PRE: total_utilizados < TAMANIO
@@ -121,7 +121,7 @@ public:
 	
 	
     /***********************************************************************/
-    // Compone un string con todos los caracteres que están
+    // Compone un string con todos los caracteres que estÃ¡n
     // almacenados en la secuencia y lo devuelve.
 
     string ToString()
@@ -160,7 +160,7 @@ int main (void)
 
 	SecuenciaCaracteres sec_c;
 	SecuenciaCaracteres sec_aniade;
-	// Añadir datos a la secuencia de caracteres
+	// AÃ±adir datos a la secuencia de caracteres
 
 	sec_c.Aniade('o');
 	sec_c.Aniade('a');
