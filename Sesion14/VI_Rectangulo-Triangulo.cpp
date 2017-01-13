@@ -8,6 +8,10 @@
 //
 //
 /* 
+	Este ejercicio contiene las clase Punto, triangulo y rectanglo.
+	
+	Cada uno de las clases contiene los metodos pedidos en el enunciado del
+	ejercicio
 	
 */
 /***************************************************************************/
@@ -130,21 +134,24 @@ public:
 class Triangulo{
 	
 private:
+	//Definimos el triangulo por sus tres vertices
 	Punto2D vertice_a, vertice_b, vertice_c;
-
 public:	
 
+	//El contructor recibe sus tres vertices
 	Triangulo(Punto2D a, Punto2D b, Punto2D c){
 		vertice_a = a;
 		vertice_b = b;
 		vertice_c = c;
 	}
 	
+	//Metodo que nos devuelve  el perimetro del triangulo	
 	double Perimetro(){
 		return vertice_a.DistanciaEuclidea(vertice_b)+vertice_b.DistanciaEuclidea(vertice_c)+
 				vertice_c.DistanciaEuclidea(vertice_a);
 	}
 	
+	//Metodo que nos dice si el triangulo es rectangulo
 	bool EsRectangulo(){
 		return ((vertice_a.GetX() == vertice_b.GetX() && vertice_a.GetY() == vertice_c.GetY()) ||
 			   (vertice_b.GetX() == vertice_c.GetX() && vertice_b.GetY() == vertice_c.GetY()) ||
@@ -155,13 +162,16 @@ public:
 class Rectangulo{
 	
 private:
+	//Definimos el rectangulo por su cuatro vertices
 	Punto2D iz_inf, iz_sup, der_inf, der_sup;
 
 public:	
 
+	//Contructor con sus cuatro vertices
 	Rectangulo(Punto2D iz_inf_in, Punto2D iz_sup_in, Punto2D der_inf_in
 			  ,Punto2D der_sup_in){
-			  	
+		
+		//si se cumplen las premisas del enunciado se ponen los vertices	  	
 		if(iz_inf_in.GetY() == der_inf_in.GetY() && 
 		   iz_sup_in.GetY() == der_sup_in.GetY() &&
 		   iz_inf_in.GetX() == iz_sup_in.GetX() && 
@@ -174,28 +184,34 @@ public:
 		}	  	
 	}
 	
+	//Nos devuelve la longitud de la base
 	double LongitudBase(){
 		return der_inf.GetX()-iz_inf.GetX(); 
 	}
 	
+	//Nos devuelve la longitud de la altura
 	double LongitudAltura(){
 		return iz_sup.GetY()-iz_inf.GetY();
 	}
 	
-	
+	//Nos devuelve la longitud el area
 	double CalcularArea(){
 		 return LongitudAltura()*LongitudBase();
 	}
 	
+	//Calcula el perimetro
 	double CalcularPerimetro(){
 		return 2*LongitudAltura()+2*LongitudBase();
 	}
 	
+	
+	//Nos dice si un punto esta dentro
 	bool EstaDentro(Punto2D punto){
 		return (punto.GetX()>iz_sup.GetX() && punto.GetX()<der_inf.GetX() &&
 		 	    punto.GetY()<der_sup.GetY() && punto.GetY() > der_inf.GetY());
 	}
 	
+	//Nos devuelve el triangulo inferior
 	Triangulo TrianguloInferior(){
 		Punto2D a,b,c;
 		a = iz_sup;
@@ -205,6 +221,7 @@ public:
 		return triangulo;	
 	}
 	
+	//Nos devuelve el triangulo superior
 	Triangulo TrianguloSuperior(){
 		Punto2D a,b,c;
 		a = der_sup;

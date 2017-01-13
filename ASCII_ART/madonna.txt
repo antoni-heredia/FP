@@ -1,0 +1,103 @@
+MXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+MXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+MXXXXXXXXXXXXXXXXX XXXX X    X     X     X XXXXXX XXXXXXXXXXXXXXXXXX
+MXXXXXXXXXXXXXXXXX  XX  X XXXX XXX X XXX XX XXXX XXXXXXXXXXXXXXXXXXX
+MXXXXXXXXXXXXXXXXX X  X X XXXX XXX X XXX XXX XX XXXXXXXXXXXXXXXXXXXX
+MXXXXXXXXXXXXXXXXX XXXX X   XX     X     XXXX  XXXXXXXXXXXXXXXXXXXXX
+MXXXXXXXXXXXXXXXXX XXXX X XXXX X XXX X XXXXXX XXXXXXXXXXXXXXXXXXXXXX
+MXXXXXXXXXXXXXXXXX XXXX X XXXX XX XX XX XXXX XXXXXXXXXXXXXXXXXXXXXXX
+MXXXXXXXXXXXXXXXXX XXXX X    X XXX X XXX XX XXXXXXXXXXXXXXXXXXXXXXXX
+MXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+MXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+MXXXXXXXXXXXXXXXXXXXXXXXXM :::::::,,,,::::LLXXXXXXXXXXXXXXXXXXXXXXXX
+MXXXXXXXXXXXXXXXXXXXXXXXXH::::.          ::::LLLXXXXXXXXXXXXXXXXXXXX
+MXXXXXXXXXXXXXXXXXXHIIQ::..                   :::::LXXXXXXXXXXXXXXXX
+MXXXXXXXXXXXXXXXXXXXHH::.IHHHHIIII::               :::HXXXXXXXXXXXXX
+MXXXXXXXXXXXXXXMMMHH::..HIIII::IIIHH::.              .:::IXXXXXXXXXX
+MXXXXXXXXXXXXXXMMH::...III:::=II::::HH:.              :::::HXXXXXXXX
+MXXXXXXXXXXXXXXH:...III::XXXXXXX..::XH::..             .::::HXXXXXXX
+MXXXXXXXXXXXXM:...:IHHIIHHHHHHHHHHHHJIIHH.            .:::HHXXXXXXXX
+MXXXXXXXXXXXMM:...:IHHH:IIHIHMMMI.::I.IIH:::              ::::XXXXXX
+MXXXXXXXXXMMM...HIIIIII ::II  I :::::IIIMMII:        :::.:::XXXXXXXX
+MXXXXXXXXXMM:..HHHIIII .: :.MHMM:  .: HHMMHM::          :::.:::XXXXX
+MXXXXXXXXXMH.IHHHH::   I  .IIHMI: ::...:HHHMMMH::.      .::..  :IXXX
+MXXXXXXXXXH:.IHHHH  IIHIHIIHHMMIIMMMIIXXXXXMHHH::..    ...     : XXX
+MXXXXXXXXXH:.HIIHHIHIIMIHHHMMHIIMMMHHHHI1::::MMHI::    .        ::XX
+MXXXXXMMMH:: IIH:: HHIMMMHHMMHIIII:::::      :MMMI:             ::XX
+MXXXXXMMMH:. :HH..III. :IIII:::::             ::MMI:            :IXX
+MXXXXXMMMH:  :HMH,...                           :MMI:.         .::XX
+MXXXXXMMMH:  :HMH,...                           .:MMI::         .:XX
+MXXXXXXXXXH:::HH..:.                            :MMMI::        ..:XX
+MXXXXMMHH: .::HMI..:.                             MMMC::.     ...,:X
+MXXXXMMHHH .::HHI..:.                             ::MMMI1:I    ::   
+MXXXXMMHH:.  :HMI.::                               ::MMII::..  ::   
+MXXXXMMH::.  :MM:..:.                                :IMMM::    .I.I
+MXXXXMH:...  MM:..::                  ..:LHHH::.       IMMI:.    ::I
+MXXXXMH..:   .MM:.::..             .:HHHTT             IMH I:     I:
+MXXXXMM..:   :MMI:IIMMM:.          :::.::HLL...         I M ::    ..
+MXXXXM,...   IMMH.:.:LHHHHH.        .:  OOOT:          :H  I     .:I
+MXXXXM..:.   HMMH..:RHH  XIHHM.     :LH:LTC             :  . :    .:
+MXXXXI..::  :HMMM:.:TI I:TI:NI.                          XHX:     :I
+MXXXX:..:: .:IMMMI. ::       .:                           .HMI: :III
+MXXXX...::. :HHHIH.:        ...                        :IHHHH:   :II
+MXXX,...::.  :HIIHH.:.:.    ...                        HHPVVCMMVVCMB
+MXX:: ..:::    :MHI.:.     .:.                        .HHHHII:.  ::I
+MXX:. ...::::    .NN..::.  .:.:.   ...                .:HMMHHIIGCC::
+MXX:. ..:::::      :C:.::::.:IH:: ::                  .:HMMMHII:.III
+MXX::,...::::I:    .:)-..:,...:::Y:                   :HXXXXXHHII:II
+MXXX::.,..:::III   .:IH:,,..,.     ...,.::=         ::IHXXXXXHYY:III
+MXXX.,..,..::IHI   ..IMH:.,..XHHHHHJJJKJKJA         .::::HHHMMMTY:.I
+MXXX..,...:IIIHI  ...HMMHI..:::TTI,..,..            :...:HHMMMHI::II
+MXXX.,...:III:TT: .:IIHHMHI:..::::::::                   ::::HMH::II
+MXXXX..::    ::IH..IIHHMMHHH:...::            .:         :IIIIIIIIII
+MXXXX..:    .:TMI.IIHHHXXXXXM:..:.        .::::         :IIIIIIIIIII
+MXXXX.:     .::HHHMII::IMMHHMMMI..:::,...,..II::        .:IIIIIIIIII
+MXXXX:.     ::IHMHH:: ...::...:IHI:::::::IIHHI::       .:IIIIIIIIIII
+MXXXX.    .:HTTHI: ..,...I...,...::HHHHMMII::           .IIIIIIIIIII
+MXXX.    .::IIII.:. ,...H:.  :I.::.IHHHII::,          .:.IIIIIIIIIII
+MXX.  ,...M:.::::..I:..  IH .. ::..I. IHHII::          ::IIIIIIIIIII
+MXX.  ,...S:.::::..I:..  ::HIH ..:.. .:.TI::         HHIIHIIIIIIIIII
+MX  ,...I ...NHIIIHHI:.:I:::...:I:..  . .I::         :IHHIIHIIIIHIII
+M.  ...:H:..IIHIIMHI:::..      :.:. ..:. I        :IHIIIIIIIIIIHHIII
+M.  ...:HH=.IIIHIHII::...:               I::.       :HHHIIIIHHHHIIII
+. ...::HHI::IMMIIHI::...:.               :IH:.     HHHIIITTTTIIIIHHY
+...::IHYY::::MIYYII,...::.              :YYHI.   HHHHHHHHHIHIIHIIHII
+..::IIHYY:.::HIHH:..,...:.              IHMYMYM HHYYMMHHMMHHMMHHMMII
+..:ITIHHHHT  HMMH..,...::.             KQMMHHHHM. IHHHXXXXXHHHHIHIIH
+.:IITTTHH: HIT NH...,..:::XXXX      .NNIHTTTHHH. NHHHHHTTTHHHHITIIHI
+:IITTTHHHIHI.TI...,...::::XXX:::: .PPP:HMHHMHHM HNMNMNMNMNMNTTIIIHHH
+:IIIIIHHHH H:::..,...:::::XXXXX::  .:OOIVHHHHHHHHMHMHHHHHHHHHHMMMIHI
+MIIHIHHHHH:   :M...:...         .        HHHTHMM:::HHMHMHMHMHMHMHIHI
+MIIIIIHHMMM:   ..:..::::        .        HMHMHMI:::IHHHXXXXXMMHHIHIM
+MIIIIHHHHMMM:...:...:::::     .:..      ITHTHTH:::::HHMHMHMHMHMHMHMM
+MIIHITHHHHHHHMMHI...:.:::.    .::M-:.:   IHTHTH::::::IHHHMMHMHMHMHMH
+MIIHIHHHHHXXXXXHI'.,..:::.     .:      :HTHHH:::::::::HMHMHMHMHMHMHM
+MIHIHXXXXX::::::IHIH:::::..   MMLHHL. .HMMHHI::::::: HT M,HMHMHMHMHM
+MIIHHHII:..:::...:II..:..:::..::MLI  :HHMMMH=:I.I:: .HT ..HHMHMHMHMB
+MIIHHHI:...::,...,  :::..,...::. HH :HHHHHH::: I::  :T. .NTHHHHHHMHM
+MIIHHI:,.,..,:..      :III,.,..:.   ::HHHIII:I .:+   :  ..NMHMHMHMHM
+MIHI:,...,.::.          :IIIH:.HHHHHHHHHHI::      I     :.: HMHMHMHM
+M:::.:::::.             :ITTIHHHHHHHTTIIII..          IT IIIHGMHMHMH
+MII:...:::::..             .:IHHHHHHHHIIIII.:         I DIIIIHHHHHHH
+MT:...::::::...::           ...,TMMHHHIIIT:I::..    . II::::ITTTHHHM
+M::...:TT:...:.:::.           =.:IMHHTTI+         .  ..PI::::::IMMMH
+M:...:::::             :IHITT.          :.        ::.HT:::::::::IHMI
+::...:::::.::::       ::::..    .:::     .        ..IFTI:::::::::::T
+::...::..:::::: II::                             :ITT::::::::::::ITT
+MSSSCCI::ITTI: :ITI:       ..        I  T        ITTT:::::::::::::::
+...:::IIHITTTI::ITI    .::.:       :: :: ::...HITI::::::::::::::::::
+...:::.IIHIHTTIITTHI .:::IT      ::: :.  :...HTILINN::::::::::::::::
+...::::ITTIHHHITTT::.::TTI:    :   :::.:.  I..TMII IITIITTII II:::::
+..:::ITTMMHIMMITTTIIIIHI: .:::    I:::.= :MTITTIIT::::::::::::::::::
+..:ITTHIHHHNMNMHHIITTHIII:::::::  TT::::::IHIT::::::::::::::::::::::
+MXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+MXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+MXXX    XX XXXX XX     XXX   XXX    XX     XX XXXX XXX   XXXX    XXX
+MXX XXXXXX XXXX XX XXXX XXX XXX XXXXXXXX XXXX  XX  XX XXX XX XXXXXXX
+MXX XXXXXX XXXX XX XXXX XXX XXX XXXXXXXX XXXX X  X XX XXX XX XXXXXXX
+MXX XXXXXX      XX     XXXX XXX     XXXX XXXX XXXX XX     XX     XXX
+MXX XXXXXX XXXX XX XX XXXXX XXXXXXX XXXX XXXX XXXX XX XXX XXXXXX XXX
+MXX XXXXXX XXXX XX XXX XXXX XXXXXXX XXXX XXXX XXXX XX XXX XXXXXX XXX
+MXXX    XX XXXX XX XXXX XX   XX    XXXXX XXXX XXXX XX XXX XX    XXXX
+MXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+MXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX

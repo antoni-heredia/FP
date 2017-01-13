@@ -8,6 +8,14 @@
 //
 //
 /*	
+	En este ejercicio se usa el struct Pareja_valorFrecuencia y las clases
+	secuenciaParejas_ValorFrecuencia y RLE
+	
+	La secuencia de parejas de valor y frecuencia es un vector del 
+	struct y contiene metodos basicos para aniadir, ya sea por pareja o por
+	los valores por separado
+	
+	Y la clase RLE esta adaptada para el struct
 
 */
 /***************************************************************************/
@@ -207,14 +215,14 @@ int main (void)
 
 	SecuenciaParejas_ValorFrecuencia secuencia_original; // Vector a codificar 
 
-
+	//Aniadimos parejas a la secuencia
 	secuencia_original.Aniade('a',3);
 	secuencia_original.Aniade('a',1);
 	secuencia_original.Aniade('b',4);
 	secuencia_original.Aniade('b',2);
 	secuencia_original.Aniade('c',1);
 
-	// Se muestra el vector original 
+	//Se muestra la secuencia de parejas
 
 	cout << endl;
 	cout << "Secuencia original:" << endl;
